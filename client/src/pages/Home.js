@@ -1,10 +1,10 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { QUERY_THOUGHTS } from "../utils/queries";
+import { QUERY_THOUGHT } from "../utils/queries";
 import ThoughtList from "../components/thoughtList";
 
 const Home = () => {
-  const { loading, data, error } = useQuery(QUERY_THOUGHTS);
+  const { loading, data, error } = useQuery(QUERY_THOUGHT);
   if (error) {
     console.log(error);
   }
